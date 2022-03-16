@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 2</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge 1</title>
+      </head>
+      <body>
+        <!-- The requirements of this challenge is the same as the last but to take the value in using a text box on a form. When the user clicks a button the currency is output.
+        
+        Intrestingly during making this I found that the page is cleared once the button is clicked, I found this is due to the answer below...
+
+        Answer = https://stackoverflow.com/questions/10873942/document-write-clears-page  
+        ) -->
+        <script>
+          function getCurrency(country) {
+            switch (country.toLowerCase()) {
+              case "australia":
+                document.write();
+                break;
+              case "ireland":
+                return "Euro";
+                break;
+              case "england":
+                return "Sterling";
+                break;
+              case "china":
+                return "Chinese Yuan Renminbi (RMB)";
+                break;
+              case "egypt":
+                return "EGP Egyptian Pound";
+                break;
+              case "iceland":
+                return "ISK Icelandic króna";
+                break;
+              default:
+                return "not known";
+            }
+          }
+        </script>
+
+        <form action="">
+          <input type="text" name="" id="country" placeholder="Australia" />
+          <br />
+          <input
+            type="button"
+            value=""
+            onclick="document.write(`The currency ${document.getElementById('country').value} uses is ${getCurrency(document.getElementById('country').value)}`);"
+          />
+        </form>
+      </body>
+    </html>
+  </body>
+</html>

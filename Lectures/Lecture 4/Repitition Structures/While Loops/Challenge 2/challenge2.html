@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- Try this.
+     For the whole numbers from 1 to 100, use a while loop
+     to display the number, the square and the cube in
+     a presentable tabular fashion -->
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Square</th>
+          <th>Cube</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          let i = 0;
+          while (i <= 100) {
+            document.write(
+              `<tr><td>${i}</td><td>${Math.pow(i, 2)}</td><td>${Math.pow(
+                i,
+                3
+              )}</td></tr>`
+            );
+            i++;
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>

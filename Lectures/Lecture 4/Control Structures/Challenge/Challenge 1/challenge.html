@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1</title>
+  </head>
+  <body>
+    <!-- My own twist on a challenge to take a country via a dialog box and output the corresponding currency in an alert box using a function expression, that is an IIFE (Immediately Involked Function Expression) -->
+    <script>
+      let country = (function country() {
+        let input = window
+          .prompt("Enter a country..", "Australia")
+          .toLowerCase();
+        switch (input) {
+          case "australia":
+            return "AUD Australian Dollar";
+            break;
+          case "ireland":
+            return "Euro";
+            break;
+          case "england":
+            return "Sterling";
+            break;
+          case "china":
+            return "Chinese Yuan Renminbi (RMB)";
+            break;
+          case "egypt":
+            return "EGP Egyptian Pound";
+            break;
+          case "iceland":
+            return "ISK Icelandic króna";
+            break;
+          default:
+            return "not known";
+        }
+      })();
+      window.alert(country);
+    </script>
+  </body>
+</html>

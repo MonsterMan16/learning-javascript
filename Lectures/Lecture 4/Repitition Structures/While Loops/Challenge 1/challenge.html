@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1</title>
+  </head>
+  <!-- Image that you are running an art supply store. You would like
+       to print out the price chart for brushes give a certain quantity 
+  -->
+  <body>
+    <table>
+      <thead>
+        <th><strong>No of Brushes Cost</strong></th>
+      </thead>
+      <tbody>
+        <script>
+          let i = 0;
+          while (i <= 100) {
+            document.write(`<tr><td>${i}</td><td>${i * 5}</td></tr>`);
+            i++;
+          }
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>
